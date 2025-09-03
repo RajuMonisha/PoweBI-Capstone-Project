@@ -1,0 +1,61 @@
+## 1. Top Categories by Total Sales
+- *Datasets Used:* Products, Order_items, Order_payments  
+- *Logic:* Total Sales = SUM(Order_items[Price] + Order_items[Freight_value])  
+- *Power BI Visual Used:* Bar Chart (Top 10 categories)  
+- *Insight:* Electronics and Furniture generated the highest sales.  
+
+---
+
+## 2. Delayed Orders Analysis
+- *Datasets Used:* Orders  
+- *Logic:* Delayed = Orders where Delivered_Date > Estimated_Delivery_Date  
+- *Power BI Visual Used:* Column Chart  
+- *Insight:* Clothing orders had the most delays.  
+
+---
+
+## 3. Monthly Comparison – Delayed vs On-Time Orders
+- *Datasets Used:* Orders  
+- *Logic:* Created a calculated column for Delivery_Status (On-Time / Delayed)  
+- *Power BI Visual Used:* Line + Column Chart with Drillthrough  
+- *Insight:* December showed the highest delays compared to other months.  
+
+---
+
+## 4. Payment Method Analysis
+- *Datasets Used:* Order_payments  
+- *Logic:* Count of Payment_Type  
+- *Power BI Visual Used:* Pie Chart  
+- *Insight:* Credit cards were the most used payment method.  
+
+---
+
+## 5. Product Rating Analysis
+- *Datasets Used:* Order_reviews  
+- *Logic:* Average Review Score by Product  
+- *Power BI Visual Used:* Bar Chart  
+- *Insight:* Electronics had the highest ratings; perishable goods had the lowest.  
+
+---
+
+## 6. State-wise Sales Analysis
+- *Datasets Used:* Orders, Customers, Geolocation  
+- *Logic:* Total Sales by State  
+- *Power BI Visual Used:* Filled Map Chart  
+- *Insight:* Lisbon and Porto recorded the highest revenue.  
+
+---
+
+## 7. Seasonal Sales Patterns
+- *Datasets Used:* Orders  
+- *Logic:* Extracted Quarter from Order_Purchase_Timestamp  
+- *Power BI Visual Used:* Line Chart  
+- *Insight:* Q4 (holiday season) had the largest spike in sales.  
+
+---
+
+## 8. Revenue Analysis
+- *Datasets Used:* Order_payments  
+- *Logic:* SUM(Payment_value) grouped by Year  
+- *Power BI Visual Used:* Line Chart  
+- *Insight:* Revenue grew steadily, peaking in 2018.
